@@ -5,7 +5,7 @@ function Testimonials() {
   return (
     <section className={styles.testimonials}>
       <div>
-        <h3>Binlerce Kişi Bizi Tercih Etti</h3>
+        <h3>Chosen by thousands</h3>
       </div >
       <TestimonialsCarousel />
     </section >

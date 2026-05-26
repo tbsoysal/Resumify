@@ -7,24 +7,24 @@ interface PersonalDetailsProps {
 const PersonalDetails = ({ setCvData }: PersonalDetailsProps) => {
   return (
     <>
-      <h3>Kişisel Bilgiler</h3>
-      <label htmlFor="nameinput">Ad ve Soyad</label>
-      <input onChange={e => setCvData(prev => ({ ...prev, firstName: e.target.value }))} id='nameinput' type="text" placeholder='Adınızı ve soyadınızı giriniz' />
+      <h3>Personal Details</h3>
+      <label htmlFor="nameinput">Full Name</label>
+      <input onChange={e => setCvData(prev => ({ ...prev, firstName: e.target.value }))} id='nameinput' type="text" placeholder='Enter your full name' />
 
-      <label htmlFor="proficiency-input">Meslek</label>
-      <input onChange={e => setCvData(prev => ({ ...prev, jobTitle: e.target.value }))} id='proficiency-input' type="text" placeholder='Meslek/Uzmanlık alanınızı giriniz' />
+      <label htmlFor="proficiency-input">Job Title</label>
+      <input onChange={e => setCvData(prev => ({ ...prev, jobTitle: e.target.value }))} id='proficiency-input' type="text" placeholder='Enter your profession or area of expertise' />
 
-      <label htmlFor="emailinput">E-mail</label>
-      <input onChange={e => setCvData(prev => ({ ...prev, contact: { ...prev.contact, email: e.target.value } }))} id='emailinput' type="email" placeholder='Mail adresinizi giriniz' />
+      <label htmlFor="emailinput">Email</label>
+      <input onChange={e => setCvData(prev => ({ ...prev, contact: { ...prev.contact, email: e.target.value } }))} id='emailinput' type="email" placeholder='Enter your email address' />
 
       <div style={{ display: 'flex', alignItems: 'center', gap: 15 }}>
         <div style={{ flex: 1 }}>
-          <label htmlFor="phoneinput">Telefon</label>
-          <input onChange={e => setCvData(prev => ({ ...prev, contact: { ...prev.contact, phone: e.target.value } }))} id='phoneinput' type="text" placeholder='Telefon numaranızı giriniz' />
+          <label htmlFor="phoneinput">Phone</label>
+          <input onChange={e => setCvData(prev => ({ ...prev, contact: { ...prev.contact, phone: e.target.value } }))} id='phoneinput' type="text" placeholder='Enter your phone number' />
         </div>
         <div style={{ flex: 1 }}>
-          <label htmlFor="locationinput">Konum</label>
-          <input onChange={e => setCvData(prev => ({ ...prev, contact: { ...prev.contact, location: e.target.value } }))} id='locationinput' type="text" placeholder='Ülke ve şehir giriniz' />
+          <label htmlFor="locationinput">Location</label>
+          <input onChange={e => setCvData(prev => ({ ...prev, contact: { ...prev.contact, location: e.target.value } }))} id='locationinput' type="text" placeholder='Enter country and city' />
         </div>
       </div>
     </>

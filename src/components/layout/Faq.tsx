@@ -3,16 +3,16 @@ import styles from "./Faq.module.scss";
 
 function Faq() {
   const faqData = [
-    { question: 'HazırCV Nedir?', answer: "HazırCV , kullanıcıların profesyonel özgeçmişler oluşturmasına ve profesyonel erişimlerini genişletmelerine yardımcı olmak için özelleştirilebilir şablonlar sağlayan bir özgeçmiş oluşturucusudur." },
-    { question: 'HazırCV Gerçekten ücretsiz mi?', answer: "Evet, HazırCV, ilk özgeçmişinizin tüm tasarım özellikleri dahil olmak üzere sonsuza kadar ücretsiz kaldığı, gizli ücret veya filigran olmadan ücretsiz bir özgeçmiş oluşturucu sunar." },
-    { question: 'HazırCV verilerinizin güvenliğini nasıl sağlıyor?', answer: "HazırCV, GDPR (Genel Veri Koruma Tüzüğü) ile uyumludur, yani veri koruma düzenlemelerine uyarız ve kullanıcı verilerini satmamayı taahhüt ederiz. Kullanıcılar istedikleri zaman verilerini silme seçeneğine sahiptir." }
+    { question: 'What is Resumify?', answer: "Resumify is a resume builder that provides customizable templates to help users create professional resumes and expand their professional reach." },
+    { question: 'Is Resumify really free?', answer: "Yes — Resumify offers a free resume builder. Your first resume stays free forever with all design features included, with no hidden fees or watermarks." },
+    { question: 'How does Resumify ensure your data is secure?', answer: "Resumify complies with GDPR (General Data Protection Regulation), follows data protection regulations, and is committed not to sell user data. Users can delete their data at any time." }
   ]
 
   const [openIndex, setOpenIndex] = useState<null | number>(null);
 
   return (
     <section className={styles.faq}>
-      <h3>Sıkça Sorulan Sorular</h3>
+      <h3>Frequently Asked Questions</h3>
       <ul>
         {faqData.map((item, index) => (
           <AccordionItem key={index} question={item.question} answer={item.answer} isOpen={openIndex === index} onClick={() => setOpenIndex(openIndex === index ? null : index)} />

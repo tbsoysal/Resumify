@@ -9,7 +9,7 @@ function TemplatesPage() {
     <>
       <Navbar />
       <main className={styles.templates}>
-        <h2>Hazır CV Şablonları</h2>
+        <h2>Ready-made CV Templates</h2>
         <div className={styles.gridContainer}>
           <Link to='/create'><img src={`${import.meta.env.BASE_URL}assets/templateimages/cvtemplateimage01.webp`} alt="cvtemplate01" /></Link>
           <a href=""><img src={`${import.meta.env.BASE_URL}assets/templateimages/cvtemplateimage02.webp`} alt="cvtemplate02" /></a>

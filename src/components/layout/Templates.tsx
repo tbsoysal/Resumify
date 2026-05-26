@@ -8,15 +8,14 @@ function Templates() {
   return (
     <section className={styles.templates}>
       <div className={styles.textcontent} >
-        <h2>Ücretsiz CV Şablonları</h2>
+        <h2>Free CV Templates</h2>
         <p>
-          Formatla uğraşmayı bırakın — modern ve ATS-uyumlu (Başvuru Takip
-          Sistemi) şablonlarımız sayesinde her kariyer seviyesinde öne çıkan,
-          profesyonel bir özgeçmiş hazırlayın.
+          Stop worrying about formatting — with our modern, ATS-friendly (Applicant Tracking
+          System) templates, create a professional resume that stands out at any career level.
         </p>
       </div>
       <TemplatesCarousel />
-      <Link className={`${buttonStyles.button} ${styles.showTemplatesButton}`} to={'/template'}>Tüm Şablonları Göster</Link>
+      <Link className={`${buttonStyles.button} ${styles.showTemplatesButton}`} to={'/template'}>View All Templates</Link>
     </section>
   );
 }

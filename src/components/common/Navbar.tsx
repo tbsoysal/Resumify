@@ -22,12 +22,12 @@ function Navbar() {
   return (
     <header className={styles.navbar} style={{ backgroundColor: `rgba(255, 255, 255, ${opacity})` }}>
       <Link to="/" className={styles.logoContainer}>
-        <img src={`${import.meta.env.BASE_URL}assets/hazircv-logo-transparan.svg`} alt="hazir cv logo" />
-        <h2>hazır<span>cv</span></h2>
+        <img src={`${import.meta.env.BASE_URL}assets/hazircv-logo-transparan.svg`} alt="Resumify logo" />
+        <h2>Resumify</h2>
       </Link>
       <ul className={styles.navigationContainer}>
-        <li><Link className={`${buttonStyles.button} ${buttonStyles.secondaryButton}`} to="/template">Şablonlar</Link></li>
-        <li><Link className={`${buttonStyles.button} ${buttonStyles.primaryButton}`} to="/create">CV Oluştur</Link></li>
+        <li><Link className={`${buttonStyles.button} ${buttonStyles.secondaryButton}`} to="/template">Templates</Link></li>
+        <li><Link className={`${buttonStyles.button} ${buttonStyles.primaryButton}`} to="/create">Create CV</Link></li>
       </ul>
     </header >
   )

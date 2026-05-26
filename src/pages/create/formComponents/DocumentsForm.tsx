@@ -13,15 +13,15 @@ const DocumentsForm = (props: DocumentsFormProps) => {
   const visible = props.documentInput.visible;
   return (
     <div style={{ display: visible ? 'block' : 'none' }} className={styles.documentsSection}>
-      <h3>Belgeler</h3>
+      <h3>Documents</h3>
       <div className={styles.documentSection}>
-        <label htmlFor="documentOrigin">Kurum Adı</label>
+        <label htmlFor="documentOrigin">Institution Name</label>
         <input type="text" id="documentOrigin" value={props.documentInput.origin} onChange={e => props.setDocumentInput(prev => ({ ...prev, origin: e.target.value }))} />
-        <label htmlFor="documentDate">Veriliş Tarihi</label>
+        <label htmlFor="documentDate">Issue Date</label>
         <input type="text" id="documentDate" value={props.documentInput.date} onChange={e => props.setDocumentInput(prev => ({ ...prev, date: e.target.value }))} />
-        <label htmlFor="documentName">Belge Adı</label>
+        <label htmlFor="documentName">Document Name</label>
         <input type="text" id="documentName" value={props.documentInput.name} onChange={e => props.setDocumentInput(prev => ({ ...prev, name: e.target.value }))} />
-        <input type="button" value="Ekle" onClick={() => props.addItem('documents', props.documentInput, () => { props.setDocumentInput({ origin: '', name: '', date: '', visible: true }) })} />
+        <input type="button" value="Add" onClick={() => props.addItem('documents', props.documentInput, () => { props.setDocumentInput({ origin: '', name: '', date: '', visible: true }) })} />
         {props.cvData.documents.map((document, index) => (
           <span key={index} onClick={() => props.removeItem('documents', index)} className={styles.languageTag}>
             {document.origin} x

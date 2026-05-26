@@ -20,7 +20,7 @@ function App() {
   return (
     <HashRouter>
       <ScrollToTop />
-      <Suspense fallback={<div>Yükleniyor...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route path='/' element={<LandingPage />}></Route>
           <Route path='/create' element={<CreationPage />}></Route>

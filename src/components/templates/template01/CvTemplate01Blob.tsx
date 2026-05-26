@@ -66,7 +66,7 @@ const CvTemplate01Blob = ({ data }: CvTemplate01BlobProps) => (
           <View style={styles.section}>
             <View style={styles.sectionHeading}>
               <ProfileIcon styles={styles} />
-              <Text>PROFİL</Text>
+              <Text>PROFILE</Text>
             </View>
             <Text style={styles.profileText}>{data.profileText}</Text>
           </View>
@@ -78,7 +78,7 @@ const CvTemplate01Blob = ({ data }: CvTemplate01BlobProps) => (
           <View style={styles.section}>
             <View style={styles.sectionHeading}>
               <LanguageIcon styles={styles} />
-              <Text>YABANCI DİL</Text>
+              <Text>LANGUAGES</Text>
             </View>
             {/* Languages level icons*/}
             <View style={styles.languagesContainer}>
@@ -102,7 +102,7 @@ const CvTemplate01Blob = ({ data }: CvTemplate01BlobProps) => (
           <View style={styles.section}>
             <View style={styles.sectionHeading}>
               <DocumentIcon styles={styles} />
-              <Text>BELGELER</Text>
+              <Text>DOCUMENTS</Text>
             </View>
             {data.documents.map((doc, index) => (
               <View key={index} style={styles.documentsList}>
@@ -124,7 +124,7 @@ const CvTemplate01Blob = ({ data }: CvTemplate01BlobProps) => (
           <View style={styles.section}>
             <View style={styles.rightSectionHeading}>
               <WorkIcon styles={styles} />
-              <Text>DENEYİM</Text>
+              <Text>EXPERIENCE</Text>
             </View>
             {data.experience.map((experience, index) => (
               <View key={index} style={styles.experienceItem}>
@@ -143,7 +143,7 @@ const CvTemplate01Blob = ({ data }: CvTemplate01BlobProps) => (
           <View style={styles.section}>
             <View style={styles.rightSectionHeading}>
               <EducationIcon styles={styles} />
-              <Text>EĞİTİM</Text>
+              <Text>EDUCATION</Text>
             </View>
             {data.education.map((edu, index) => (
               <View key={index} style={styles.educationItem}>
@@ -161,7 +161,7 @@ const CvTemplate01Blob = ({ data }: CvTemplate01BlobProps) => (
           <View style={styles.section}>
             <View style={styles.rightSectionHeading}>
               <SkillsIcon styles={styles} />
-              <Text>YETENEKLER</Text>
+              <Text>SKILLS</Text>
             </View>
             {data.skills.map((skill, index) => (
               <Text key={index} style={styles.skillItem}>• {skill.text}</Text>

@@ -14,17 +14,17 @@ const ExperiencesForm = (props: ExperiencesFormProps) => {
 
   return (
     <div style={{ display: visible ? 'block' : 'none' }} className={styles.experiencesSection}>
-      <h3>Deneyim</h3>
+      <h3>Experience</h3>
       <div>
-        <label htmlFor="cName">Şirket Adı</label>
+        <label htmlFor="cName">Company Name</label>
         <input type="text" id="cName" value={props.experienceInput.companyName} onChange={e => props.setExperienceInput(prev => ({ ...prev, companyName: e.target.value }))} />
-        <label htmlFor="jName">Alan</label>
+        <label htmlFor="jName">Role</label>
         <input type="text" id="jName" value={props.experienceInput.jobName} onChange={e => props.setExperienceInput(prev => ({ ...prev, jobName: e.target.value }))} />
-        <label htmlFor="jDate">Tarih - Konum</label>
+        <label htmlFor="jDate">Date - Location</label>
         <input type="text" id="jDate" value={props.experienceInput.jobDate} onChange={e => props.setExperienceInput(prev => ({ ...prev, jobDate: e.target.value }))} />
-        <label htmlFor="jExplanation">Açıklama</label>
+        <label htmlFor="jExplanation">Description</label>
         <input type="text" id="jExplanation" value={props.experienceInput.jobExplanation} onChange={e => props.setExperienceInput(prev => ({ ...prev, jobExplanation: e.target.value }))} />
-        <input type="button" value="Ekle" onClick={() => props.addItem('experience', props.experienceInput, () => props.setExperienceInput({ companyName: '', jobName: '', jobDate: '', jobExplanation: '', visible: true }))} />
+        <input type="button" value="Add" onClick={() => props.addItem('experience', props.experienceInput, () => props.setExperienceInput({ companyName: '', jobName: '', jobDate: '', jobExplanation: '', visible: true }))} />
         {props.cvData.experience.map((experience, index) => (
           <span key={index} onClick={() => props.removeItem('experience', index)} className={styles.languageTag}>
             {experience.companyName} x

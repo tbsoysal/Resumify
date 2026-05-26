@@ -61,15 +61,15 @@ function CreationPage() {
     <div className={styles.container}>
       <div className={styles.navbarContainer}>
         <header className={styles.navbar}>
-          <Link className={styles.backButton} to="/">&lt; Anasayfa</Link>
+          <Link className={styles.backButton} to="/">&lt; Home</Link>
           <select name='templateNo'>
-            <option value="cvtemplate01">Şablon 01</option>
-            <option value="cvtemplate02">Şablon 02</option>
-            <option value="cvtemplate03">Şablon 03</option>
-            <option value="cvtemplate04">Şablon 04</option>
-            <option value="cvtemplate05">Şablon 05</option>
+            <option value="cvtemplate01">Template 01</option>
+            <option value="cvtemplate02">Template 02</option>
+            <option value="cvtemplate03">Template 03</option>
+            <option value="cvtemplate04">Template 04</option>
+            <option value="cvtemplate05">Template 05</option>
           </select>
-          <a href={pdfBlobUrl} download='cv.pdf' className={`${buttonStyles.button} ${buttonStyles.primaryButton} ${styles.downloadBtn}`}>İndir<i className="fa-solid fa-download"></i></a>
+          <a href={pdfBlobUrl} download='cv.pdf' className={`${buttonStyles.button} ${buttonStyles.primaryButton} ${styles.downloadBtn}`}>Download<i className="fa-solid fa-download"></i></a>
         </header>
       </div>
 
