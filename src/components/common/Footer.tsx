@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <div className={styles.wrapper}>
         <div className={styles.flexContainer}>
-          <img src={`${import.meta.env.BASE_URL}assets/hazircv-logo-transparan.svg`} alt="logo" />
+          <img src={`${import.meta.env.BASE_URL}assets/resumify-logo-transparent.svg`} alt="logo" />
           <span>Resumify</span>
         </div>
         <p className={styles.description}>Resumify is a project developed using modern web technologies. Designed and coded with React.js, the platform aims to provide a user-friendly experience. All design and development work was carried out by web developer Tahaberk Soysal. It is carefully prepared to help users create fast, stylish, and effective resumes.</p>

@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  base: mode === 'production' ? '/resume-builder/' : '/',
+  base: mode === 'production' ? '/Resumify/' : '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

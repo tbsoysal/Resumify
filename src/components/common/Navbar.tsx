@@ -22,7 +22,7 @@ function Navbar() {
   return (
     <header className={styles.navbar} style={{ backgroundColor: `rgba(255, 255, 255, ${opacity})` }}>
       <Link to="/" className={styles.logoContainer}>
-        <img src={`${import.meta.env.BASE_URL}assets/hazircv-logo-transparan.svg`} alt="Resumify logo" />
+        <img src={`${import.meta.env.BASE_URL}assets/resumify-logo-transparent.svg`} alt="Resumify logo" />
         <h2>Resumify</h2>
       </Link>
       <ul className={styles.navigationContainer}>
